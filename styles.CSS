@@ -11,8 +11,8 @@ body {
 header {
     background-color: #0056b3;
     color: white;
-    padding: 20px;
     text-align: center;
+    padding: 20px;
 }
 
 header h1 {
@@ -25,6 +25,7 @@ header p {
     font-size: 1.2em;
 }
 
+/* Main Content Styles */
 main {
     max-width: 1200px;
     margin: 20px auto;
@@ -35,16 +36,16 @@ main {
 .card {
     display: flex;
     align-items: center;
-    margin-bottom: 20px;
-    padding: 20px;
-    background: white;
+    background-color: #007acc;
     border-radius: 8px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    padding: 20px;
+    color: white;
 }
 
 .card img {
-    width: 250px;
-    height: auto;
+    width: 40%;
     border-radius: 8px;
     margin-right: 20px;
 }
@@ -54,13 +55,13 @@ main {
 }
 
 .card-content h2 {
-    color: #0056b3;
     font-size: 1.8em;
     margin-bottom: 10px;
+    color: #f4f4f9;
 }
 
 .card-content p {
-    margin: 0;
+    margin: 0 0 10px;
     font-size: 1em;
     line-height: 1.5;
 }
@@ -68,9 +69,9 @@ main {
 /* Footer Styles */
 footer {
     text-align: center;
-    padding: 10px;
     background-color: #0056b3;
     color: white;
+    padding: 10px;
     margin-top: 20px;
 }
 
