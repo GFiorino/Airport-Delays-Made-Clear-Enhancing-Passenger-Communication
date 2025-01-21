@@ -1,76 +1,89 @@
+/* General Styles */
 body {
     font-family: Arial, sans-serif;
-    line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f9;
+    background-color: #f8f9fc;
     color: #333;
 }
 
 header {
-    background-color: #0056b3;
+    background-color: #007bff;
     color: white;
-    padding: 20px;
     text-align: center;
+    padding: 20px 10px;
 }
 
 header h1 {
     margin: 0;
-    font-size: 2.5em;
+    font-size: 2rem;
 }
 
 header p {
-    margin: 0;
-    font-size: 1.2em;
+    margin: 5px 0 0;
+    font-size: 1.1rem;
 }
 
 main {
-    max-width: 1200px;
+    max-width: 900px;
     margin: 20px auto;
-    padding: 20px;
+    padding: 0 10px;
 }
 
+/* Card Styles */
 .card {
     display: flex;
-    align-items: flex-end; /* Align text to the bottom of the image */
-    background: white;
-    border-radius: 8px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    align-items: flex-start;
+    background-color: white;
     margin-bottom: 20px;
+    border-radius: 10px;
     overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+    max-width: 800px; /* Make the cards smaller */
+}
+
+.card:hover {
+    transform: scale(1.02);
 }
 
 .card img {
-    width: 50%;
+    flex: 0 0 35%; /* Reduce image size */
+    width: 100%;
+    height: auto;
     object-fit: cover;
-    border-right: 5px solid #f4f4f9;
+    border-right: 2px solid #e9ecef;
 }
 
 .card-content {
-    padding: 20px;
-    width: 50%;
+    flex: 1;
+    padding: 15px 20px; /* Reduce padding */
 }
 
 .card-content h2 {
-    color: #0056b3;
+    color: #007bff;
+    font-size: 1.5rem;
     margin-top: 0;
-    font-size: 1.8em;
 }
 
 .card-content p {
     margin: 10px 0;
+    line-height: 1.5;
+    font-size: 0.95rem; /* Slightly smaller font size */
 }
 
+/* Footer Styles */
 footer {
     text-align: center;
     padding: 10px;
-    background-color: #0056b3;
+    background-color: #007bff;
     color: white;
     margin-top: 20px;
+    font-size: 0.9rem;
 }
 
 footer a {
-    color: #f4f4f9;
+    color: #ffd700;
     text-decoration: none;
     font-weight: bold;
 }
