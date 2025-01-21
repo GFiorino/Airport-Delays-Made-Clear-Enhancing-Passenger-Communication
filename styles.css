@@ -35,23 +35,24 @@ header p {
 /* Cards */
 .card {
     display: flex;
+    align-items: center;
     background: #fff;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     margin: 20px 0;
     overflow: hidden;
-    height: 320px; /* Fixed height for consistent appearance */
+    padding: 15px;
+    gap: 20px;
 }
 
 .card img {
-    width: 100%; /* Ensure the image spans the full width */
-    height: auto; /* Maintain aspect ratio */
-    object-fit: contain; /* Prevent cropping */
-    object-position: center; /* Center the image vertically */
+    width: 40%;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
 }
 
 .card-content {
-    padding: 20px;
     flex: 1;
     display: flex;
     flex-direction: column;
@@ -61,20 +62,24 @@ header p {
 .card-content h2 {
     color: #0056b3;
     margin-bottom: 10px;
+    font-size: 1.5rem;
 }
 
 .card-content p {
     line-height: 1.6;
+    font-size: 1rem;
 }
 
+/* Specific Style for the Update Message */
 .update-message {
     margin-top: 10px;
     padding: 10px;
     background-color: #f5f5f5;
     border-left: 4px solid #ff8800;
+    font-size: 0.9rem;
 }
 
-/* Table Section */
+/* Table Section (Untouched) */
 .table-container {
     margin: 30px auto;
     max-width: 1100px;
