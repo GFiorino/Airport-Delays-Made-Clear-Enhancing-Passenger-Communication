@@ -11,25 +11,25 @@ header {
     background-color: #0056b3;
     color: #fff;
     text-align: center;
-    padding: 20px 10px;
+    padding: 15px 8px; /* Reduced padding */
 }
 
 header h1 {
     margin: 0;
-    font-size: 2rem;
+    font-size: 1.6rem; /* Reduced font size */
 }
 
 header p {
-    margin: 10px 0 0;
-    font-size: 1.2rem;
+    margin: 8px 0 0;
+    font-size: 1rem; /* Reduced font size */
 }
 
 /* Main Container */
 .main-container {
-    width: 90%;
-    max-width: 1100px;
+    width: 72%; /* Reduced width by 20% */
+    max-width: 880px; /* Reduced max width */
     margin: 0 auto;
-    padding: 20px 0;
+    padding: 16px 0; /* Reduced padding */
 }
 
 /* Cards */
@@ -38,21 +38,20 @@ header p {
     background: #fff;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    margin: 20px 0;
+    margin: 16px 0; /* Reduced margin */
     overflow: hidden;
-    height: 350px; /* Unified height for all cards */
+    height: 256px; /* Reduced height */
 }
 
 .card img {
-    width: 50%; /* All images take half the card's width */
-    height: 100%; /* Stretch to match card height */
-    object-fit: cover; /* Prevent cropping */
-    object-position: center; /* Center image vertically and horizontally */
+    width: 35%; /* Reduced width */
+    height: 100%;
+    object-fit: cover;
     border-radius: 10px 0 0 10px;
 }
 
 .card-content {
-    padding: 20px;
+    padding: 16px; /* Reduced padding */
     flex: 1;
     display: flex;
     flex-direction: column;
@@ -61,37 +60,39 @@ header p {
 
 .card-content h2 {
     color: #0056b3;
-    margin-bottom: 10px;
+    margin-bottom: 8px; /* Reduced margin */
+    font-size: 1.2rem; /* Reduced font size */
 }
 
 .card-content p {
-    line-height: 1.6;
+    line-height: 1.4; /* Adjusted line height */
+    font-size: 0.9rem; /* Reduced font size */
 }
 
-/* Special Message Box (if needed) */
 .update-message {
-    margin-top: 10px;
-    padding: 10px;
+    margin-top: 8px; /* Reduced margin */
+    padding: 8px; /* Reduced padding */
     background-color: #f5f5f5;
-    border-left: 4px solid #ff8800;
+    border-left: 3px solid #ff8800; /* Reduced border size */
+    font-size: 0.9rem; /* Reduced font size */
 }
 
 /* Table Section */
 .table-container {
-    margin: 30px auto;
-    max-width: 1100px;
+    margin: 24px auto; /* Reduced margin */
+    max-width: 880px; /* Reduced max width */
     background-color: #002147;
     border-radius: 10px;
-    padding: 20px;
+    padding: 16px; /* Reduced padding */
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .table-title {
     color: #ffffff;
-    font-size: 1.5rem;
+    font-size: 1.2rem; /* Reduced font size */
     font-weight: bold;
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 16px; /* Reduced margin */
 }
 
 table {
@@ -104,16 +105,18 @@ table {
     background-color: #004080;
     color: #ffffff;
     text-align: left;
-    padding: 15px;
+    padding: 12px; /* Reduced padding */
+    font-size: 0.9rem; /* Reduced font size */
 }
 
 .table-row td {
     width: 25%;
     background-color: #0055aa;
     color: #ffffff;
-    padding: 15px;
+    padding: 12px; /* Reduced padding */
     vertical-align: top;
     border-bottom: 1px solid #004080;
+    font-size: 0.9rem; /* Reduced font size */
 }
 
 /* Footer */
@@ -121,8 +124,9 @@ table {
     text-align: center;
     background-color: #0056b3;
     color: #ffffff;
-    padding: 10px 0;
-    margin-top: 30px;
+    padding: 8px 0; /* Reduced padding */
+    margin-top: 24px; /* Reduced margin */
+    font-size: 0.9rem; /* Reduced font size */
 }
 
 .footer a {
