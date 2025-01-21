@@ -1,17 +1,18 @@
-/* General Styles */
 body {
     font-family: Arial, sans-serif;
+    line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-color: #f8f9fc;
+    background-color: #f4f4f9;
     color: #333;
 }
 
 header {
     background-color: #007bff;
     color: white;
+    padding: 20px;
     text-align: center;
-    padding: 20px 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 header h1 {
@@ -20,69 +21,103 @@ header h1 {
 }
 
 header p {
-    margin: 5px 0 0;
+    margin: 10px 0 0;
     font-size: 1.1rem;
 }
 
 main {
-    max-width: 900px;
+    max-width: 800px;
     margin: 20px auto;
-    padding: 0 10px;
+    padding: 10px;
 }
 
-/* Card Styles */
 .card {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    background-color: white;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.02);
+}
+
+.card img {
+    width: 40%; /* Adjust image width for balance */
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px 0 0 10px;
+}
+
+.card .card-content {
+    padding: 20px;
+    text-align: left;
+    width: 60%; /* Adjust width to balance with image */
+}
+
+.card .card-content h2 {
+    color: #007bff;
+    font-size: 1.5rem;
+    margin: 10px 0;
+}
+
+.card .card-content p {
+    margin: 5px 0;
+    line-height: 1.5;
+    font-size: 0.95rem;
+}
+
+/* Specific styles for the last card */
+.card-large {
+    display: block; /* Stack image and content vertically */
     background-color: white;
     margin-bottom: 20px;
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     padding: 20px;
-    gap: 20px;
     transition: transform 0.2s ease-in-out;
-    height: 200px; /* Ensure consistent height */
 }
 
-.card img {
-    flex: 0 0 150px; /* Fixed image size */
-    width: 150px;
+.card-large img {
+    width: 100%; /* Full width to maximize readability */
     height: auto;
-    object-fit: cover;
     border-radius: 10px;
+    margin-bottom: 10px;
 }
 
-.card-content {
-    flex: 1;
+.card-large .card-content {
+    text-align: left;
     padding: 0;
 }
 
-.card-content h2 {
+.card-large .card-content h2 {
     color: #007bff;
     font-size: 1.5rem;
-    margin: 0 0 10px 0;
+    margin: 10px 0;
 }
 
-.card-content p {
+.card-large .card-content p {
     margin: 5px 0;
     line-height: 1.5;
     font-size: 0.95rem;
 }
 
-/* Footer Styles */
 footer {
     text-align: center;
     padding: 10px;
     background-color: #007bff;
     color: white;
     margin-top: 20px;
-    font-size: 0.9rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 footer a {
-    color: #ffd700;
+    color: #f4f4f9;
     text-decoration: none;
     font-weight: bold;
 }
