@@ -35,24 +35,24 @@ header p {
 /* Cards */
 .card {
     display: flex;
-    align-items: center;
     background: #fff;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     margin: 20px 0;
     overflow: hidden;
-    padding: 15px;
-    gap: 20px;
+    height: 350px; /* Unified height for all cards */
 }
 
 .card img {
-    width: 40%;
-    height: auto;
-    border-radius: 10px;
-    object-fit: cover;
+    width: 50%; /* All images take half the card's width */
+    height: 100%; /* Stretch to match card height */
+    object-fit: cover; /* Prevent cropping */
+    object-position: center; /* Center image vertically and horizontally */
+    border-radius: 10px 0 0 10px;
 }
 
 .card-content {
+    padding: 20px;
     flex: 1;
     display: flex;
     flex-direction: column;
@@ -62,24 +62,21 @@ header p {
 .card-content h2 {
     color: #0056b3;
     margin-bottom: 10px;
-    font-size: 1.5rem;
 }
 
 .card-content p {
     line-height: 1.6;
-    font-size: 1rem;
 }
 
-/* Specific Style for the Update Message */
+/* Special Message Box (if needed) */
 .update-message {
     margin-top: 10px;
     padding: 10px;
     background-color: #f5f5f5;
     border-left: 4px solid #ff8800;
-    font-size: 0.9rem;
 }
 
-/* Table Section (Untouched) */
+/* Table Section */
 .table-container {
     margin: 30px auto;
     max-width: 1100px;
@@ -132,34 +129,6 @@ table {
     color: #ffffff;
     text-decoration: none;
     font-weight: bold;
-}
-/* Third Card Specific Style */
-.card:last-child {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    background: #fff;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    margin: 20px 0;
-    overflow: hidden;
-    height: 400px; /* Increase height for larger image */
-}
-
-.card:last-child img {
-    width: 50%; /* Ensure image takes half of the card width */
-    height: 100%; /* Stretch image to card height */
-    object-fit: cover; /* Ensure image scales properly */
-    object-position: top; /* Align top of the image */
-    border-radius: 10px 0 0 10px;
-}
-
-.card:last-child .card-content {
-    flex: 1;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
 }
 
 .footer a:hover {
