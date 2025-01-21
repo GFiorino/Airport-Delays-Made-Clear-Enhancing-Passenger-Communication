@@ -33,43 +33,42 @@ main {
 /* Card Styles */
 .card {
     display: flex;
-    align-items: flex-start;
+    align-items: center;
+    justify-content: space-between;
     background-color: white;
     margin-bottom: 20px;
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    gap: 20px;
     transition: transform 0.2s ease-in-out;
-    max-width: 800px; /* Make the cards smaller */
-}
-
-.card:hover {
-    transform: scale(1.02);
+    height: 200px; /* Ensure consistent height */
 }
 
 .card img {
-    flex: 0 0 35%; /* Reduce image size */
-    width: 100%;
+    flex: 0 0 150px; /* Fixed image size */
+    width: 150px;
     height: auto;
     object-fit: cover;
-    border-right: 2px solid #e9ecef;
+    border-radius: 10px;
 }
 
 .card-content {
     flex: 1;
-    padding: 15px 20px; /* Reduce padding */
+    padding: 0;
 }
 
 .card-content h2 {
     color: #007bff;
     font-size: 1.5rem;
-    margin-top: 0;
+    margin: 0 0 10px 0;
 }
 
 .card-content p {
-    margin: 10px 0;
+    margin: 5px 0;
     line-height: 1.5;
-    font-size: 0.95rem; /* Slightly smaller font size */
+    font-size: 0.95rem;
 }
 
 /* Footer Styles */
