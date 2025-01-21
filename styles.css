@@ -40,10 +40,12 @@ header p {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     margin: 20px 0;
     overflow: hidden;
+    align-items: center;
 }
 
-.card img {
+.card-image img {
     width: 40%;
+    height: auto;
     object-fit: cover;
     border-radius: 10px 0 0 10px;
 }
@@ -62,37 +64,10 @@ header p {
     line-height: 1.6;
 }
 
-/* Card 3 Specific Styles */
-.card.last-card {
-    display: flex;
-    background-color: #ffffff;
-    border-radius: 10px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    margin: 20px 0;
-    align-items: center;
-    width: 90%; /* Consistent with main container */
-    max-width: 900px;
-    margin: 20px auto; /* Center alignment */
-}
-
-.card.last-card .card-image img {
-    width: 50%; /* Adjusted for better readability */
-    height: auto;
-    border-radius: 10px;
-    object-fit: cover;
-}
-
-.card.last-card .card-text {
-    margin-left: 20px;
-    padding: 20px;
-    flex: 1;
-}
-
-/* Table Section Styles */
+/* Table Section */
 .table-container {
     margin: 30px auto;
-    width: 90%;
-    max-width: 900px; /* Aligns with card width */
+    max-width: 1100px;
     background-color: #002147;
     border-radius: 10px;
     padding: 20px;
@@ -111,32 +86,31 @@ table {
     width: 100%;
     border-collapse: collapse;
     background-color: #003366; /* Slight contrast for rows */
-    border-radius: 10px;
-    overflow: hidden;
 }
 
-.table-header th {
+thead th {
     background-color: #004080;
     color: #ffffff;
     text-align: left;
     padding: 15px;
-    font-size: 1rem;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
 }
 
-.table-row td {
+tbody td {
     background-color: #0055aa;
     color: #ffffff;
     padding: 15px;
     vertical-align: top;
-    font-size: 0.9rem;
     border-bottom: 1px solid #004080;
+    text-align: left;
 }
 
-ul {
+tbody ul {
     margin: 0;
     padding-left: 20px;
 }
 
-.table-row td ul li {
+tbody ul li {
     margin-bottom: 5px;
 }
