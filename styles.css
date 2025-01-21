@@ -1,132 +1,83 @@
 /* General Styles */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    background-color: #f8f9fa;
-    color: #333;
-}
-
-header {
-    background-color: #007bff;
-    color: white;
-    text-align: center;
-    padding: 20px 0;
-}
-
-header h1 {
-    font-size: 2rem;
-    margin: 0;
-}
-
-header p {
-    margin: 5px 0 0;
-}
-
-main {
-    padding: 20px;
+/* General card styling */
+.card-container {
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 20px;
+    width: 85%; /* Adjusted width for centering */
+    margin: 0 auto; /* Centers the cards */
 }
 
+/* Styling for individual cards */
 .card {
     display: flex;
+    flex-direction: row;
     align-items: center;
-    background: white;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     padding: 20px;
-    gap: 20px;
+    width: 100%; /* Allows it to adapt to the container width */
+    max-width: 800px; /* Maximum width for a professional look */
 }
 
+/* Image styling for all cards */
 .card img {
-    width: 40%;
+    width: 40%; /* Proportional width */
     height: auto;
-    max-height: 200px; /* Ensures images do not exceed a specific height */
-    object-fit: cover; /* Keeps the aspect ratio intact */
     border-radius: 8px;
-    flex-shrink: 0;
 }
 
+/* Text content styling */
 .card-content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    flex-grow: 1;
+    padding-left: 20px;
+    flex: 1;
 }
 
-.card-content h2 {
-    color: #007bff;
-    font-size: 1.5rem;
-    margin-bottom: 10px;
+/* Special styling for the last card */
+.card:last-child img {
+    width: 50%; /* Bigger for readability */
+    height: auto;
 }
 
-.card-content p {
-    margin: 0;
-    line-height: 1.6;
-}
-
-footer {
-    text-align: center;
-    padding: 20px 0;
-    background-color: #007bff;
-    color: white;
-    margin-top: 20px;
-    border-top: 4px solid #0056b3;
-}
-
-footer a {
-    color: #ffd700;
-    text-decoration: none;
-}
-
-footer a:hover {
-    text-decoration: underline;
-}
-
-/* Table styles */
+/* Table styling */
 .table-container {
-    background-color: #004085; /* Darker blue for contrast */
-    color: white;
+    width: 85%; /* Match the card container width */
+    max-width: 800px; /* Ensures a consistent look */
+    margin: 0 auto; /* Centers the table */
+    background: #002147;
+    color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    overflow-x: auto;
 }
 
-table {
+.table-container table {
     width: 100%;
     border-collapse: collapse;
+}
+
+.table-container th,
+.table-container td {
     text-align: left;
-}
-
-table th, table td {
     padding: 12px 15px;
-    border: 1px solid #dee2e6;
-    vertical-align: top; /* Aligns text to the top-left */
 }
 
-table th {
-    background-color: #0056b3;
-    color: white;
-    font-weight: bold;
+.table-container th {
+    background-color: #004080;
 }
 
-table td {
-    background-color: #007bff;
-    color: white;
+.table-container td {
+    vertical-align: top;
+    background-color: #003366;
 }
 
-table tr:nth-child(even) td {
-    background-color: #0056b3;
-}
-
-table a {
-    color: #ffd700;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-table a:hover {
-    text-decoration: underline;
+/* Center-align all content */
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    background: #f4f4f4;
 }
