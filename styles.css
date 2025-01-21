@@ -70,7 +70,7 @@ main {
 }
 
 .card-large img {
-    width: 48%; /* 20% larger than the first cards' images */
+    width: 44%; /* Reduced to just 10% larger than the first cards' images */
     margin-bottom: 15px;
     border-radius: 8px;
 }
