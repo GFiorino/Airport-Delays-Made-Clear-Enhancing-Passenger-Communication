@@ -32,7 +32,7 @@ main {
 
 .card {
     display: flex;
-    align-items: center;
+    align-items: flex-end; /* Align content to the bottom of the image */
     background: #0056b3;
     color: white;
     border-radius: 8px;
