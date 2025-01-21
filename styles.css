@@ -1,83 +1,116 @@
-/* General Styles */
-/* General card styling */
-.card-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-    width: 85%; /* Adjusted width for centering */
-    margin: 0 auto; /* Centers the cards */
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
 }
 
-/* Styling for individual cards */
+header {
+    background-color: #0056b3;
+    color: #fff;
+    text-align: center;
+    padding: 20px 10px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+header p {
+    margin: 10px 0 0;
+    font-size: 1.2rem;
+}
+
+/* Main Container */
+.main-container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+/* Cards */
 .card {
     display: flex;
-    flex-direction: row;
-    align-items: center;
     background: #fff;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    width: 100%; /* Allows it to adapt to the container width */
-    max-width: 800px; /* Maximum width for a professional look */
+    margin: 20px 0;
+    overflow: hidden;
 }
 
-/* Image styling for all cards */
 .card img {
-    width: 40%; /* Proportional width */
-    height: auto;
-    border-radius: 8px;
+    width: 40%;
+    object-fit: cover;
+    border-radius: 10px 0 0 10px;
 }
 
-/* Text content styling */
 .card-content {
-    padding-left: 20px;
+    padding: 20px;
     flex: 1;
 }
 
-/* Special styling for the last card */
-.card:last-child img {
-    width: 50%; /* Bigger for readability */
-    height: auto;
+.card-content h2 {
+    color: #0056b3;
+    margin-bottom: 10px;
 }
 
-/* Table styling */
-.table-container {
-    width: 85%; /* Match the card container width */
-    max-width: 800px; /* Ensures a consistent look */
-    margin: 0 auto; /* Centers the table */
-    background: #002147;
+.card-content p {
+    line-height: 1.6;
+}
+
+/* Last Card Specific */
+.last-card img {
+    width: 50%; /* Slightly larger for readability */
+}
+
+/* Table Section */
+.table-section {
+    background: #003366;
     color: #fff;
     border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     padding: 20px;
+    margin-top: 40px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.table-container table {
+.table-section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+table {
     width: 100%;
     border-collapse: collapse;
+    margin: 0 auto;
 }
 
-.table-container th,
-.table-container td {
+table th, table td {
+    padding: 15px;
     text-align: left;
-    padding: 12px 15px;
-}
-
-.table-container th {
-    background-color: #004080;
-}
-
-.table-container td {
     vertical-align: top;
-    background-color: #003366;
 }
 
-/* Center-align all content */
-body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 30px;
-    background: #f4f4f4;
+table th {
+    background: #004080;
+    color: #fff;
+    font-weight: bold;
+}
+
+table td {
+    background: #002147;
+    color: #fff;
+}
+
+table ul {
+    margin: 0;
+    padding-left: 20px;
+}
+
+table ul li {
+    margin-bottom: 5px;
 }
