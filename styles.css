@@ -61,7 +61,7 @@ header p {
     width: 45%;
 }
 
-/* Table Styles */
+/* Table Section */
 .table-section {
     max-width: 900px;
     margin: 20px auto;
@@ -90,8 +90,18 @@ thead {
 
 th, td {
     text-align: left;
-    padding: 10px;
+    padding: 15px;
     border: 1px solid #ddd;
+}
+
+th {
+    width: 25%;
+    font-size: 1.1em;
+}
+
+td {
+    vertical-align: top;
+    font-size: 1em;
 }
 
 tbody tr:nth-child(even) {
@@ -101,6 +111,7 @@ tbody tr:nth-child(even) {
 .link {
     color: #ff9800;
     font-weight: bold;
+    text-decoration: none;
 }
 
 .link:hover {
