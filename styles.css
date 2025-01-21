@@ -40,13 +40,14 @@ header p {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     margin: 20px 0;
     overflow: hidden;
-    height: 300px; /* Ensures consistent height */
+    height: 320px; /* Fixed height for consistent appearance */
 }
 
 .card img {
     width: 40%;
     height: 100%;
     object-fit: cover;
+    object-position: top; /* Ensures the bottom of the image is visible */
     border-radius: 10px 0 0 10px;
 }
 
@@ -74,7 +75,7 @@ header p {
     border-left: 4px solid #ff8800;
 }
 
-/* Table Section Styles */
+/* Table Section */
 .table-container {
     margin: 30px auto;
     max-width: 1100px;
@@ -112,4 +113,23 @@ table {
     padding: 15px;
     vertical-align: top;
     border-bottom: 1px solid #004080;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    background-color: #0056b3;
+    color: #ffffff;
+    padding: 10px 0;
+    margin-top: 30px;
+}
+
+.footer a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.footer a:hover {
+    text-decoration: underline;
 }
