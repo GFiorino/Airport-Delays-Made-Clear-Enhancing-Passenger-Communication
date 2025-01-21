@@ -133,6 +133,34 @@ table {
     text-decoration: none;
     font-weight: bold;
 }
+/* Third Card Specific Style */
+.card:last-child {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+    overflow: hidden;
+    height: 400px; /* Increase height for larger image */
+}
+
+.card:last-child img {
+    width: 50%; /* Ensure image takes half of the card width */
+    height: 100%; /* Stretch image to card height */
+    object-fit: cover; /* Ensure image scales properly */
+    object-position: top; /* Align top of the image */
+    border-radius: 10px 0 0 10px;
+}
+
+.card:last-child .card-content {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 
 .footer a:hover {
     text-decoration: underline;
